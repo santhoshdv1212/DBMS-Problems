@@ -1,6 +1,6 @@
-select b.product_id,b.product_name from 
-sales a left join product b 
-on a.product_id=b.product_id
-group by b.product_id,b.product_name
-having min(a.sale_date)>='2019-01-01'
-and max(a.sale_date)<='2019-03-31';
+SELECT product_id, product_name 
+FROM Sales 
+JOIN Product USING (product_id) 
+GROUP BY product_id, product_name 
+HAVING MIN(sale_date) >= '2019-01-01' 
+AND MAX(sale_date) <= '2019-03-31';
