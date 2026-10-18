@@ -5,5 +5,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0181-employees-earning-more-than-their-managers](https://github.com/santhoshdv1212/DBMS-Problems/tree/master/0181-employees-earning-more-than-their-managers) |
+| [1204-last-person-to-fit-in-the-bus](https://github.com/santhoshdv1212/DBMS-Problems/tree/master/1204-last-person-to-fit-in-the-bus) |
 | [1661-average-time-of-process-per-machine](https://github.com/santhoshdv1212/DBMS-Problems/tree/master/1661-average-time-of-process-per-machine) |
 <!---LeetCode Topics End-->
