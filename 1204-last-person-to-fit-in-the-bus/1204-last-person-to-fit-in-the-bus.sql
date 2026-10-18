@@ -1,11 +1,12 @@
-WITH AccumulatedQueue AS (
-    SELECT 
-        person_name, 
-        SUM(weight) OVER (ORDER BY turn) AS accumulated_weight 
-    FROM Queue 
+with cte as (
+    select
+    person_name,
+    SUM(weight) OVER (ORDER BY turn) AS total_weight
+    from queue
 )
-SELECT person_name 
-FROM AccumulatedQueue 
-WHERE accumulated_weight <= 1000 
-ORDER BY accumulated_weight DESC 
-LIMIT 1;
+select
+person_name
+from cte
+where total_weight<=1000
+ORDER BY total_weight DESC
+LIMIT 1
